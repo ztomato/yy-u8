@@ -42,14 +42,14 @@ def help():
 """
     print(helpinfo)
     print("YYGRP-U8".center(100, '*'))
-    print(f"[+]{sys.argv[0]} -u --url htttp://www.xxx.com 即可进行单个漏洞检测")
+    print(f"[+]{sys.argv[0]} -u --url http://www.xxx.com 即可进行单个漏洞检测")
     print(f"[+]{sys.argv[0]} -f --file targetUrl.txt 即可对选中文档中的网址进行批量检测")
     print(f"[+]{sys.argv[0]} -h --help 查看更多详细帮助信息")
-    print("--@xhs".rjust(100," "))
+    print("--@ztomato".rjust(100," "))
 
 
 def main():
-    parser = argparse.ArgumentParser(description='GRP-U8-UploadFile漏洞单批检测脚本@xhs')
+    parser = argparse.ArgumentParser(description='GRP-U8-UploadFile漏洞单批检测脚本@ztomato')
     parser.add_argument('-u','--url', type=str, help='单个漏洞网址')
     parser.add_argument('-f','--file', type=str, help='批量检测文本')
     parser.add_argument('-t','--thread',type=int, help='线程，默认为5')
